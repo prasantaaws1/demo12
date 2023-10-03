@@ -16,7 +16,7 @@ steps{
 
 stage("SCM Checkout"){
 steps{
-    git branch : master, credentialsId: 'github', url: 'https://github.com/prasantaaws1/demo12.git'
+    git branch: 'master', credentialsId: 'github', url: 'https://github.com/prasantaaws1/demo12.git'
     }
    }   
    }
