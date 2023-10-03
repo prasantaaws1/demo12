@@ -18,7 +18,12 @@ stage("SCM Checkout"){
 steps{
     git branch: 'master', credentialsId: 'github', url: 'https://github.com/prasantaaws1/demo12.git'
     }
-   }   
+   }
+stage("Build Application"){
+steps{
+  sh "mvn clean package"
+    }
+   }  
    }
 
 }
